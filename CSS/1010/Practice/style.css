@@ -1,0 +1,54 @@
+/* 제목 h1 스타일 */
+h1 {
+  color: blue;
+  font-size: 36px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  text-shadow: 2px 2px 3px gray;
+}
+/* 부제목 h2 스타일 */
+h2 {
+  color: green;
+  font-size: 28px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: left;
+  font-style: italic;
+  text-decoration: underline;
+}
+/* 본문 p 스타일 */
+p {
+  color: black;
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 1.6;
+  text-indent: 40px;
+  letter-spacing: 1.2px;
+  word-spacing: 2.4px;
+}
+/* 목록 (<ul> or <ol>) */
+ul, ol {
+  color: brown;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+ul li, ol li {
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+/* 링크 (<a>) */
+a {
+  color: purple;
+  font-size: 16px;
+  text-decoration: none;
+  letter-spacing: 0.8px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 1px 1px 2px black;
+}
+
+a:hover {
+  color: red;
+}
+
+a:visited {
+  color: gray;
+}
