@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>테이블 속성 예제</title>
+  <link rel="stylesheet" href="styles/c_practice.css">
+</head>
+<body>
+  <!--  
+    배경 색상 지정 태그에 class 속성으로 heading 지정
+  -->
+  <table border="1">
+    <caption>2023 국민 독서 실태</caption>
+    <colgroup>
+      <!-- 테이블의 열(세로)을 스타일링할 때 사용하는 태그 -->
+      <col class="heading">
+      <!-- 
+      <col class="col-two">
+      <col class="col-three"> 
+      -->
+    <thead>
+      <tr>
+        <th class="heading">구분</th>
+        <th class="heading">성인</th>
+        <th class="heading">독서자</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th class="heading">종이책</th>
+        <th>6.1권</th>
+        <th>11.8권</th>
+      </tr>
+      <tr>
+        <th class="heading">전자책</th>
+        <th>1.2권</th>
+        <th>7.1권</th>
+      </tr>
+      <tr>
+        <th class="heading">오디오책</th>
+        <th>0.2권</th>
+        <th>5.5권</th>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

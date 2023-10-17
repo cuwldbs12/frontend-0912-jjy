@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+h1 {
+  color: orange;
+  text-align: center;
+}
+
+.nav {
+  background-color: #555;
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+tr {
+  text-decoration: underline;
+  margin-left: 20px;
+}
+
+#section1 table {
+  border-collapse: collapse;
+}
+#section1 th, td {
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.img1 {
+  width: 150px;
+  height: 150px;
+}
+
+#survey-yes {
+  vertical-align: middle;
+  text-align: center;
+  margin: 0 auto;
+}
+
+button {
+  width: 100%;
+}

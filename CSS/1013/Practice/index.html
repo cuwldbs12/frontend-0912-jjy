@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML & CSS 복습</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="wrap">
+    <!-- header 부분 -->
+    <div id="header">
+      <h1>Welcome to My Website</h1>
+    </div>
+    <div class="header_inner">
+      <div class="nav">
+        <a href="#">Section 1</a>
+        <a href="#">Section 1</a>
+      </div>
+    </div>
+    <div id="main">
+      <!-- div Secrion 1부분 -->
+      <div class="section1">
+        <h2>Section 1</h2>
+        <table id="section1">
+          <table>
+            <tr>
+              <th>Header 1</th>
+              <th>Header 2</th>
+            </tr>
+            <tr>
+              <td>Data 1</td>
+              <td>Data 2</td>
+            </tr>
+          </table>
+        </table>
+        <a href="#">
+          <img 
+          class="img1"
+          src="../../../images/lotte.jpeg" 
+          alt="롯데 자이언츠 로고" 
+          />
+        </a>
+      </div>
+      <!-- div Secrion 2부분 -->
+      <div class="section2">
+        <h2>Section 2</h2>
+      </div>
+      <div>
+        <p>
+          <img class="img2" src="../../../images/Example imge.png" alt="Example image">
+        </p>
+      </div>
+      <!-- Personal Information 부분 -->
+      <div id="psinfo">
+        <form action="#" id="psinfo" name="psinfo">
+          <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name" required style="width: 100%;" />
+            <label for="password">Password: </label>
+            <input type="password" id="password" name="password" required style="width: 100%;" />
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email" required style="width: 100%;" />
+            <div class="survey">
+              <p>Do you like this form?</p>
+              <form action="#">
+                <input type="radio" name="survey" id="survey-yes" value="Yes" />Yes
+                <br />
+                <input type="radio" name="survey" id="survey-no" value="No" />No <br />
+              </form>
+              <footer>
+                <label for="#">
+                  comments:
+                </label><br />
+                  <input type="text" style="width: 100%; height: 100px;" />
+                </div>
+                <div class="btn">
+                  <button type="submit">Submit</button>
+                </div>
+              </footer>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
