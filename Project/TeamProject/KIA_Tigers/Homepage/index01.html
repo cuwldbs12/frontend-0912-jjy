@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>가야 타이어즈 홈화면 클론코딩</title>
+  <link rel="stylesheet" href="style01.css">
+</head>
+<body>
+  <div id="root">
+    <header>
+      <div class="head-wrap">
+        <div class="skipNav">
+          <a href="https://tigers.co.kr/">본문바로가기</a>
+        </div>
+        <!-- topMenu -->
+        <div class="topMeun">
+          <ul topMIn>
+            <li>
+              <a href="#">팀스토어</a>
+            </li>
+            <li>
+              <a href="#">회원가입</a>
+            </li>
+            <li>
+              <a href="#">로그인</a>
+            </li>
+          </ul>
+        </div>
+        <!-- 메인로고 -->
+        <div class="mainLogo">
+          <a href="https://tigers.co.kr/">본문바로가기</a>
+        </div>
+        <!-- 네비 바 -->
+        <nav>
+          <div class="mainNavi">
+            <ul>
+              <li>
+                <a href="#">TIGRS</a>
+              </li>
+              <li>
+                <a href="#">PLAYERS</a>
+              </li>
+              <li>
+                <a href="#">CONTENTS</a>
+              </li>
+              <li>
+                <a href="#">GAME</a>
+              </li>
+              <li>
+                <a href="#">TICKET</a>
+              </li>
+              <li>
+                <a href="#">MEMBERSHIP</a>
+              </li>
+            </ul>
+            <!-- 네비 바 안에 내용 -->
+            <div class="navIn">
+              <dl>
+                <dt>TIGRS</dt>
+                <dd>
+                  <a href="#">인사말</a>
+                </dd>
+                <dd>
+                  <a href="#">구단소개</a>
+                </dd>
+                <dd>
+                  <a href="#">광주-기아 챔피언스 필드</a>
+                </dd>
+                <dd>
+                  <a href="#">기아 챌린저스 필드</a>
+                </dd>
+                <dd>
+                  <a href="#">CI</a>
+                </dd>
+                <dd>
+                  <a href="#">역사관</a>
+                </dd>
+                <dd>
+                  <a href="#">응원단</a>
+                </dd>
+                <dd>
+                  <a href="#">스폰서</a>
+                </dd>
+              </dl>
+              <dl>
+                <dt>PLAYERS</dt>
+                <dd>
+                  <a href="#">코칭스태프</a>
+                </dd>
+                <dd>
+                  <a href="#">투수</a>
+                </dd>
+                <dd>
+                  <a href="#">포수</a>
+                </dd>
+                <dd>
+                  <a href="#">내야수</a>
+                </dd>
+                <dd>
+                  <a href="#">외야수</a>
+                </dd>
+                <dd>
+                  <a href="#">군입대선수</a>
+                </dd>
+                <dd>
+                  <a href="#">엔트리현황</a>
+                </dd>
+              </dl>
+              <dl>
+                <dt>CONTENTS</dt>
+                <dd>
+                  <a href="#">공지사항</a>
+                </dd>
+                <dd>
+                  <a href="#">보도자료</a>
+                </dd>
+                <dd>
+                  <a href="#">타이거즈 뉴스</a>
+                </dd>
+                <dd>
+                  <a href="#">타이거즈 웹진</a>
+                </dd>
+                <dd>
+                  <a href="#">타이거즈TV</a>
+                </dd>
+                <dd>
+                  <a href="#">타이거즈 에피소드</a>
+                </dd>
+                <dd>
+                  <a href="#">구단 SNS</a>
+                </dd>
+              </dl>
+              <dl>
+                <dt>GAME</dt>
+                <dd>
+                  <a href="#">경기일정</a>
+                </dd>
+                <dd>
+                  <a href="#">Tigers Baseball</a>
+                </dd>
+                <dd>
+                  <a href="#">생생화보</a>
+                </dd>
+                <dd>
+                  <a href="#">STATS</a>
+                </dd>
+              </dl>
+              <dl>
+                <dt>TICKET</dt>
+                <dd>
+                  <a href="#">입장권 안내 및 예매</a>
+                </dd>
+                <dd>
+                  <a href="#">시즌권/자유이용권</a>
+                </dd>
+                <dd>
+                  <a href="#">
+                    스카이박스 시즌권/
+                    <br />
+                    예매 안내 
+                  </a>
+                </dd>
+              </dl>
+              <dl>
+                <dt>MEMBERSHIP</dt>
+                <dd>
+                  <a href="#">포인트 안내</a>
+                </dd>
+                <dd>
+                  <a href="#">호랑이 사랑방</a>
+                </dd>
+                <dd>
+                  <a href="#">FAQ</a>
+                </dd>
+                <dd>
+                  <a href="#">1:1 문의</a>
+                </dd>
+              </dl>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- 컨테이너 -->
+    <div class="container">
+      <div class="contaIn">
+        <section class="slider_clear">
+          <!-- 메인 베너 -->
+          <div class="mainBanner">
+            <div>
+              <img src="https://stage.tigers.co.kr/files/banner/2023/02/08/catchphrase_pc.png" alt="시즌 메인 베너">
+            </div>
+          </div>
+        </section>
+        <div class="homecont">
+          <!-- HOT ISSUE -->
+          <section class="hotIssue">
+              <h3>
+                HOT 
+                <span>ISSUE</span>
+              </h3>
+              <legend>게시글 개수</legend>
+              <div class="posts"></div>
+          </section>
+          <!-- ALL TIGERS -->
+          <section class="allTigers">
+            <h3>
+              ALL 
+            <span>TIGERS</span>    
+            </h3>
+            <div class="point">
+              <a href="#">
+                <img 
+                src="https://stage.tigers.co.kr/files/banner/2023/05/20230515_kia_main_banner_point.jpg" 
+                alt="포인트 안내" 
+                />
+              </a>
+            </div>
+            <div class="shop">
+              <a href="#">
+                <img 
+                src="https://stage.tigers.co.kr/files/resource/2023/03/30/main_store_banner.png" 
+                alt="온라인샵" 
+                />
+              </a>
+            </div>
+            <div class="sponsor_adver">
+              <a href="#">
+                <img src="https://stage.tigers.co.kr/files/episode/2022/10/12/20221012111048.fb2-f2c62e3aaab6.png"
+                alt="스폰서 광고 안내" 
+                />
+              </a>
+            </div>
+            <div class="gameTime">
+              <a href="#">
+                <img 
+                src="https://stage.tigers.co.kr/files/banner/2022/02/23/20220223144122.58b-a689a4bb40e0.png" 
+                alt="경기 일정" 
+                />
+              </a>
+            </div>
+            <div class="map">
+              <a href="#">
+                <img 
+                src="https://stage.tigers.co.kr/files/episode/2021/05/13/20210513144226.ff5-d61a7654bee7.png" 
+                alt="오시는길" 
+                />
+              </a>
+            </div>
+            <div class="player">
+              <a href="#">
+                <img 
+                src="https://stage.tigers.co.kr/files/banner/2022/02/23/20220223142035.c6a-47812eec62f3.png" 
+                alt="선수소개"
+                />
+              </a>
+            </div>
+            <div class="twitter">
+              <a href="#">
+                <img 
+                src="https://tigers.co.kr/img/main/banner_twitter_pc.jpg" 
+                alt="트위터 연결"
+                />
+                <dl>
+                  <dt>
+                    <img 
+                    src="https://tigers.co.kr/img/main/2023_twitter_logo.png" 
+                    alt="트위터 로고"
+                    />
+                  </dt>
+                </dl>
+              </a>
+            </div>
+            <div class="insta">
+              <a href="#">
+                <img 
+                src="https://tigers.co.kr/img/main/banner_instagram_pc.png" 
+                alt="인스타그램 연결"
+                />
+              </a>
+            </div>
+            <div>
+              <video src="KIA_Tigers" controls></video>
+            </div>
+          </section>
+          <!-- 스폰서안내 -->
+          <section class="sponsors">
+            <ul class="sp_logo"></ul>
+            <p class="sp_btn_before">
+              <img 
+              src="https://tigers.co.kr/img/main/sl_ptn_prev.png" 
+              alt="이전 버튼"
+              />
+            </p>
+            <p class="sp_btn_next">
+              <img 
+              src="https://tigers.co.kr/img/main/sl_ptn_next.png" 
+              alt="다음 버튼"
+              />
+            </p>
+          </section>
+        </div>
+      </div>
+      <footer>
+        <!-- footer sns 표시 -->
+        <div class="footer_sns">
+          <ul>
+            <li>
+              <a href="#">개인정보처리방침</a>
+            </li>
+            <li>
+              <a href="#">서비스이용약관</a>
+            </li>
+            <li>
+              <a href="#">운영정책</a>
+            </li>
+            <li>
+              <a href="#">이메일주소무단수집거부</a>
+            </li>
+            <li>
+              <a href="#">KIA타이거즈 스폰서</a>
+            </li>
+            <li>
+              <a href="#">언론사진 자료실</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#">
+                <img 
+                src="https://tigers.co.kr/img/main/sns_naver.png" 
+                alt="네이버 바로가기"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img 
+                src="https://tigers.co.kr/img/main/sns_1boon.png" 
+                alt="1분 바로가기"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img 
+                src="https://tigers.co.kr/img/main/sns_kakao.png" 
+                alt="카카오 바로가기"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img 
+                src="https://tigers.co.kr/img/main/sns_yt.png" 
+                alt="유튜브 바로가기"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img 
+                src="https://tigers.co.kr/img/main/sns_ins.png" 
+                alt="인스타 바로가기"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img 
+                src="https://tigers.co.kr/img/main/sns_tw.png" 
+                alt="트위터 바로가기"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- footer copy 표시 -->
+        <div class="footer_copy">
+          <p>
+            사업등록번호: 409-81-02844 
+            대표자: 최준영 
+            주소: 광주광영시 북구 서림동 10 광주-기아 챔피언스 필드 내 2층 KIA타이거즈 사무실
+          </p>
+          <p>
+            전화 : 070-7686-8000 
+            팩스 : 062-525-5350 
+            이메일 : kiatigers@kiatigers.co.kr
+          </p>
+          <p>
+            Copyright &copy; 2020 KIA TIGERS. All rights reserved.
+          </p>
+        </div>
+      </footer>
+    </div>
+  </div>
+  </div>
+</body>
+</html>
