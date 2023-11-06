@@ -1,6 +1,9 @@
 * {
   display: block;
+  margin: 0;
+  padding: 0;
 }
+
 body {
   width: 100%;
   height: 100%;
@@ -9,10 +12,33 @@ body {
 ul, li {
   list-style: none;
 }
-/* header 스타일 영역 */
-header {
-  border: 1px solid red;
+
+a{
+  text-decoration: none;
+  color: #3c3c3c;
 }
+
+.blind {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 0;
+  left: 0;
+  font-size: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* header 스타일 영역 */
+.head-wrap {
+  width: 100%;
+  box-sizing: border-box;
+}
+
 /* topMeun */
 .topMeun {
   z-index: 110;
@@ -21,6 +47,7 @@ header {
   background-color: #fff;
   position: relative;
 }
+
 .topMIn {
   width: 1200px;
   height: 100%;
@@ -28,10 +55,497 @@ header {
   line-height: 40px;
 }
 
-.container {
-  border: 1px solid orange;
+.topMIn > li {
+  float: right;
+  position: relative;
+  margin-right: 20px;
+}
+/* 메인 로고 */
+.mainLogo {
+  z-index: 100;
+  width: 200px;
+  height: 150px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: inline-block;
+  margin: 0 auto;
+  top: 15px;
+  background: url(images.png) no-repeat center center;
+  transition: all 0.1s;
+  background-size: contain;
 }
 
+.mainLogo a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+/* 네비 바 */
+nav {
+  z-index: 100;
+  width: 100%;
+  height: 70px;
+  position: relative;
+}
+
+.navi {
+  z-index: 100;
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+}
+
+.mainNavi {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.mainNavi > ul {
+  z-index: 150;
+  height: 80px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.mainNavi > ul > li {
+  position: relative;
+  float: left;
+  width: 180px;
+  z-index: 20;
+  height: 70px;
+}
+
+.mainNavi > ul > li > a {
+  display: block;
+  height: 100%;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 70px;
+  padding-bottom: 20px;
+}
+
+.mainNavi > ul > li:nth-of-type(3) {
+  margin-right: 200px;
+}
+
+.mainNavi > ul > li:nth-of-type(n + 4) {
+  width: 150px;
+}
+
+.mainNavi > ul > li:nth-of-type {
+  width: 130px;
+}
+/* 네비바 안에 내용 */
+.navIn {
+  z-index: 30;
+  width: 100%;
+  height: 400px;
+  padding: 30px 0;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: -400px;
+  background: url(https://tigers.co.kr/img/main/gnb_bg.png) no-repeat center center;
+  transition: all 0.25s linear 0s;
+}
+
+.navIn2 {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.navIn2 > dl {
+  float: left;
+  width: 170px;
+}
+
+.navIn2 > dl:nth-of-type(3){
+  margin-right: 200px;
+}
+
+.navIn2 > dl:nth-of-type(n + 4) {
+  width: 150px;
+}
+
+.navIn2 > dl:nth-of-type {
+  width: 130px;
+}
+
+.navIn2 dd a {
+  display: block;
+  padding-bottom: 20px;
+  font-size: 15px;
+}
+/* 컨테이너 */
+.container {
+  width: 100%;
+  height: auto;
+  position: relative;
+  min-height: 80px;
+}
+
+.contaIn {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 50px;
+}
+
+.contaIn .slider_clear {
+  width: 100%;
+  height: auto;
+}
+
+.contaIn section {
+  position: relative;
+}
+/* Banner */
+.contaIn .slider_clear .mainBanner {
+  max-width: 1920px;
+  height: auto;
+  margin: 0 auto;
+}
+.mainBanner2 {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  touch-action: pan-y;
+}
+
+.bannerImg {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.slider-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* HOT ISSUE */
+.homecont {
+  width: 1200px;
+  margin: auto;
+  position: relative;
+}
+
+.homecont .hotIssue {
+  top: -30px;
+  margin-top: 40px;
+}
+
+.hotIssue > h3 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.hotIssue > h3 > span {
+  color: red;
+}
+
+.hotCard  {
+  display: flex;
+}
+
+.posts {
+  width: 100%;
+  display: inline-block;
+}
+
+.hotIssue .posts {
+  width: 385px !important;
+  height: 380px;
+  border-radius: 15px;
+  background-color: #fff;
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 3px;
+  overflow: hidden;
+}
+
+.hotIssue .posts .postImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.hotIssue .posts .postTxt {
+  padding: 20px 10px;
+  box-sizing: border-box;
+}
+
+.hotIssue .postDay {
+  width: 15px;
+  background: url(https://tigers.co.kr/img/main/hot_ico1.png) no-repeat center;
+}
+
+.hotIssue .postNum {
+  width: 15px;
+  background: url(https://tigers.co.kr/img/main/hot_ico2.png) no-repeat center;
+}
+
+.hotIssue .postGood {
+  width: 15px;
+  background: url(https://tigers.co.kr/img/main/hot_ico3.png) no-repeat center;
+}
+
+.hotIssue .posts .postTxt dl dt {
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  color: red;
+}
+
+.hotIssue .posts .postTxt dl dt:first-of-type {
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  display: block;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.hotIssue .posts .postTxt dl dd:first-of-type {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  width: 100%;
+  line-height: 1.2em;
+  max-height: 2.4em;
+}
+
+.hotIssue .posts .postTxt ul > li {
+  float: left;
+  margin: 0 30px 0 25px;
+  position: relative;
+}
+
+.hotIssue .posts .postTxt ul > li::after {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 12px;
+  background-color: #c4c6c8;
+  position: absolute;
+  right: -15px;
+  top: 3px;
+}
+
+.hotIssue .posts .postTxt ul > li > span {
+  height: 15px;
+  position: absolute;
+  left: -25px;
+  top: 1px;
+}
+
+/* ALL TIGERS */
+.allTigers {
+  width: 1200px;
+  margin: auto;
+}
+
+.allTigers h3 {
+  margin: 12px 0 20px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.allTigers h3 span {
+  color: red;
+}
+
+.allTigers > div {
+  float: left;
+  width: 390px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 7px;
+}
+
+.allTigers > div:nth-of-type(3n) {
+  margin-right: 0;
+}
+
+.allTigers > div:nth-of-type(n + 1):nth-of-type(-n + 3) {
+  height: 380px;
+}
+.allTigers > div:nth-of-type(n + 4):nth-of-type(-n + 6) {
+  height: 250px;
+}
+
+.allTigers > div:nth-of-type(n + 6) {
+  height: 300px;
+}
+
+.allTigers > div > a {
+  display: block;
+  position: relative;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.allTigers > div > a > dl {
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 45px;
+  box-sizing: border-box;
+}
+
+.twitter dt {
+  margin-bottom: 30px;
+  width: auto;
+  height: auto;
+  max-width: 60px;
+  max-height: 60px;
+  margin-left: 120px;
+  margin-top: 70px;
+}
+
+.allTigers .twitter > a::after,
+.allTigers .insta > a::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.allTigers .twitter > a img,
+.allTigers .insta > a ing {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+/* 스폰서안내 */
+.sponsors {
+  display: block;
+  margin: auto;
+  margin-top: 77px;
+  width: 1200px;
+}
+
+.sponsors .sp_logo {
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.spLogos {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.sponsorList {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  height: 0;
+}
+
+.sp-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sp_btn_before {
+  position: absolute;
+  cursor: pointer;
+  left: 0;
+  top: 0;
+}
+
+.sp_btn_next {
+  position: absolute;
+  cursor: pointer;
+  right: 0;
+  top: 0;
+}
+
+/* footer */
 footer {
-  border: 1px solid blue;
+  position: relative;
+  z-index: 10;
+}
+
+.footer_sns {
+  height: 50px;
+  background-color: #e9e2e2;
+  border: 1px solid #c4c6c8;
+}
+
+.footSns {
+  width: 1200px;
+  margin: auto;
+  position: relative;
+}
+
+.footSns ul:nth-of-type(1) li {
+  float: left;
+  margin-right: 50px;
+}
+
+.footSns ul:nth-of-type(2) li {
+  float: left;
+  margin-left: 10px;
+}
+
+.footSns a {
+  font-size: 15px;
+  line-height: 50px;
+}
+
+.footSns a img {
+  vertical-align: middle;
+}
+
+.footer_copy {
+  position: relative;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 20px 0 30px;
+  width: 1200px;
+  height: 135px;
+}
+
+.footer_copy p:nth-of-type(-n + 2) {
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.footer_copy p:nth-of-type(3) {
+  margin-top: 20px;
+  font-size: 15px;
 }
